@@ -19,6 +19,7 @@ Exceptions are thrown with a variable length parameter list with the code as the
 ## Throwing
 
 To throw an exception, you can build up your message with multiple parameters.  Place your code as the last parameter.
+Exception messages are concatenated from the parameters with `PHP_EOL` as the glue.
 
 ```php
 throw new Exception(
