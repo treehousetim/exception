@@ -1,7 +1,7 @@
 {
     "name": "treehousetim/exception",
     "description": "Simple Good Exceptions",
-    "type": "project",
+    "type": "library",
     "license": "MIT",
     "authors": [
         {
@@ -14,8 +14,7 @@
         "php": "^8.0"
     },
     "require-dev": {
-        "phpunit/phpunit": "^9.5",
-        "monolog/monolog": "^2.0 || ^3.0"
+        "phpunit/phpunit": "^9.5"
     },
     "autoload": {
         "psr-4": {
@@ -28,6 +27,13 @@
         }
     },
     "scripts": {
-        "test": ["phpunit"]
+        "test": [
+            "phpunit"
+        ]
+    },
+    "config": {
+        "platform": {
+            "php": "8.0.30"
+        }
     }
 }
